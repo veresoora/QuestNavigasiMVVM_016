@@ -19,12 +19,13 @@ fun DetailMahasiswaView(
     onBackClick: () -> Unit
 ) {
     val listDataMhs = listOf(
+        Pair("Nim", dataMhs.nim),
         Pair("Nama", dataMhs.nama),
         Pair("Gender", dataMhs.gender),
         Pair("Alamat", dataMhs.alamat),
         Pair("No Telp", dataMhs.noTelp),
         Pair("Email", dataMhs.email),
-        Pair("Nim", dataMhs.nim)
+
     )
 
     Column (
