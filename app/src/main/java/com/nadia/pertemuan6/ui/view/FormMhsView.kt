@@ -56,6 +56,17 @@ fun FormMahasiswaView(
         Spacer(modifier = Modifier.padding(16.dp))
         TextField(
             modifier = Modifier.fillMaxWidth().padding(5.dp),
+            value = nim,
+            onValueChange = {nim = it},
+            label = {
+                Text("NIM")
+            },
+            placeholder = {
+                Text("Masukkan NIM Anda")
+            }
+        )
+        TextField(
+            modifier = Modifier.fillMaxWidth().padding(5.dp),
             value = nama,
             onValueChange = {nama = it},
             label = {
