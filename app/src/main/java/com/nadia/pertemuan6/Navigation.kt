@@ -14,6 +14,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.nadia.pertemuan6.model.ListGender
+import com.nadia.pertemuan6.ui.view.DetailMahasiswaView
 import com.nadia.pertemuan6.ui.view.FormMahasiswaView
 import com.nadia.pertemuan6.ui.viewmodel.MahasiswaViewModel
 
@@ -46,6 +47,13 @@ fun Navigasi(
                         navHost.navigate(Halaman.Data.name)
                     }
                 )
+            }
+            composable(route = Halaman.Data.name){
+                DetailMahasiswaView(
+                    dataMhs = uiState,
+                    onBackClick = {
+                        navHost.popBackStack()
+                    } )
             }
         }
     }
