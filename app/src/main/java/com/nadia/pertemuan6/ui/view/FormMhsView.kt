@@ -39,6 +39,8 @@ fun FormMahasiswaView(
     var noTelpon by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var JK by remember { mutableStateOf("") }
+    var nim by remember { mutableStateOf("") }
+
 
     val listData: MutableList<String> = mutableListOf(
         nama, JK, alamat
