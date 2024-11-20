@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.nadia.pertemuan6"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.nadia.pertemuan6"
